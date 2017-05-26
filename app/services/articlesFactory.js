@@ -2,14 +2,18 @@
     var articlesFactory = function ($http) {
 
         var factory = {};
-        // getArticles is just a made up function
+
+        // getArticles from a node.js backend
         factory.getArticles = function () {
-            return $http.get('https://twana-daniel.mybluemix.net/articles');
+            //return $http.get('https://twana-daniel.mybluemix.net/articles');
+            return $http.get('app/posts/data.json');
         };
 
-        factory.getArticle = function (articlesId) {
-            return $http.get('https://twana-daniel.mybluemix.net/articles/' + articlesId);
+        factory.getArticle = function () {
+            //return $http.get('https://twana-daniel.mybluemix.net/articles/' + articlesId);
+            return $http.get('app/posts/data.json');
         };
+
         return factory;
     };
 

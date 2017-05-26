@@ -24,11 +24,9 @@
 
     };
 
-
     BlogController.$inject = ['$scope', '$log', 'articlesFactory', 'siteSettings'];
 
     angular.module('TwanaApp')
         .controller('BlogController', BlogController);
 
 }());
-
