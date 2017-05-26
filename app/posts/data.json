@@ -1,0 +1,45 @@
+[
+    {
+        "id": "40042",
+        "State": "live",
+        "date": "April 24, 2017",
+        "title": "Building Amazon Alexa skills with IBM OpenWhisk and Watson",
+        "short_description": "This example will guide you how to build Amazon Alexa skills using IBM Bluemix OpenWhisk and Watson services. ",
+        "image": "",
+        "calgary": "web",
+        "Technologies": " ",
+        "search": "Build alexa skills using Watson and OpenWhisk",
+        "details": {
+            "long_description": "This is the long info"
+        }
+    },
+    {
+        "id": "40040",
+        "State": "live",
+        "date": "Feb 25, 2017",
+        "title": "Build & Deploy a Docker application to the Cloud",
+        "short_description": "This example will guide you how to deploy a Node.js chat application up on the cloud as a Docker container. We will use the Blue Chatter app to demonstrate this, the Blue Chatter app is a simple chat/IRC type application for the browser where it allows multiple users to chat when online at the same time. ",
+        "image": "",
+        "calgary": "web",
+        "Technologies": "Docker Containers, Node.js, Bluemix Cloud & Redis Cloud Service ",
+        "search": "Build and deploy a docker application to the cloud",
+        "details": {
+            "long_description": "This is the long info"
+        }
+    },
+    {
+        "id": "40041",
+        "State": "live",
+        "date": "March 26, 2017",
+        "title": "Form Processing With IBM Bluemix OpenWhisk",
+        "short_description": "The OpenWhiskContact application is a simple Angular.js form processing app that shows how a form can be processed without the need of any backend, this is by using the IBM OpenWhisk Serverless architecture where an action is created then exposed as an API and then used in the Angular app.",
+        "image": "",
+        "calgary": "web",
+        "Technologies": "OpenWhisk, SendGrid, Node.js",
+        "search": "Form Processing without backend, Form Processing with OpenWhisk, Form Processing with SendGrid",
+        "details": {
+            "long_description": "This is the long info"
+        }
+    }
+
+]
