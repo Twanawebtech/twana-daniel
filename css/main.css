@@ -1041,6 +1041,11 @@ a {
   .allButton:hover {
     margin: 0px 10px;
   }
+  .mainDisplayDisplay{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
   .post-card__meta {
     font-size: 14px;
   }
