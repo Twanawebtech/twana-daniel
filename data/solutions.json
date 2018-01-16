@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Use Virtual Servers to build highly available and scalable web app",
+    "description": "This tutorial walks you through the creation of a load balancer, two application servers running on Ubuntu with NGINX and PHP installed, one MySQL database server, and durable file storage to store application files and backups.",
+    "language": [
+      "Virtual Servers", 
+      "Load Balancer", 
+      "PHP",
+      "Object Storage"
+    ],
+    "urlLink": "https://console.bluemix.net/docs/tutorials/highly-available-and-scalable-web-application.html#use-virtual-servers-to-build-highly-available-and-scalable-web-app",
+    "deploy": "25",
+    "count": "item1"
+  },
+  {
+    "name": "Web Application running on a LAMP Stack server",
+    "description": "This tutorial walks you through the creation of an Ubuntu Linux virtual server, with Apache web server, MySQL, and PHP (the LAMP stack). To see the LAMP server in action, you will install and configure the WordPress open source application.",
+    "language": [
+      "Virtual Servers", 
+      "PHP", 
+      "WordPress",
+      "Vulnerability Scanner"
+    ],
+    "urlLink": "https://console.bluemix.net/docs/tutorials/highly-available-and-scalable-web-application.html#use-virtual-servers-to-build-highly-available-and-scalable-web-app",
+    "deploy": "16",
+    "count": "item2"
+  },
+  {
+    "name": "Modern Web Applications using MEAN stack",
+    "description": "Use a Schematics template to provision a Linux virtual server, with Apache web server, MySQL, and PHP server (LAMP stack) and Object Storage. You will then configure the template to scale the resources and tune the environment.",
+    "language": [
+      "Cloud Foundry", 
+      "Node.js", 
+      "Compose for MongoDB"
+    ],
+    "urlLink": "https://console.bluemix.net/docs/tutorials/highly-available-and-scalable-web-application.html#use-virtual-servers-to-build-highly-available-and-scalable-web-app",
+    "deploy": "8",
+    "count": "item3"
+  },
+  {
+    "name": "Automate deployment of environments using Infrastructure as Code",
+    "description": "This tutorial walks you through the creation of a load balancer, two application servers running on Ubuntu with NGINX and PHP installed, one MySQL database server, and durable file storage to store application files and backups.",
+    "language": [
+      "Virtual Servers", 
+      "Schematics", 
+      "PHP",
+      "Object Storage"
+    ],
+    "urlLink": "https://console.bluemix.net/docs/tutorials/highly-available-and-scalable-web-application.html#use-virtual-servers-to-build-highly-available-and-scalable-web-app",
+    "deploy": "9",
+    "count": "item4"
+  }
+]

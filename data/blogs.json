@@ -1,0 +1,111 @@
+[
+  {
+    "name": "Securing single page apps with App ID service",
+    "description": "The Investment Insights for Asset Managers offers a dashboard type user interface to allow users to analyze a set of stock portfolios based on the risk factor calculated. The application uses a combination of services like Watson Discovery News, Investment Portfolio, Predictive Market Scenarios and Simulated Instrument Analytics. All of the services configured using Node.js for the backend and AngularJS for the front end.",
+    "language": [
+      "App ID", 
+      "Financial Services", 
+      "watson discovery",
+      "Node.js"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2017/09/securing-single-page-apps-app-id-service/",
+    "deploy": "8"
+  },
+  {
+    "name": "Developing a finance application using IBM Cloud",
+    "description": "What would happen to my stock portfolio if the Dollar drops 5% against the Euro? or if the gold price goes up by 1.1%? If you are a developer in the Finance industry or a financial analyst, or if you simply own stocks you may be asking yourself the question. How could modern technologies and services help answer this question?",
+    "language": [
+      "Watson Discovery News", 
+      "Investment Portfolio", 
+      "Simulated Instrument Analytics",
+      "Node.js"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2017/08/developing-finance-application-using-ibm-cloud/",
+    "deploy": "7"
+  },
+  {
+    "name": "2.2 Deploy and scale a kubernetes chat app on IBM Cloud",
+    "description": "In the previous BlueChatter post, we looked at deploying and scaling a Node.js chat app using Cloud Foundry and Docker Container approach. In this post, we will look at how to deploy, scale and manage a Kubernetes application. We will reuse the same BlueChatter node.js application for this example.",
+    "language": [
+      "Kubernetes", 
+      "Docker", 
+      "Node.js",
+      "Scaling"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2017/05/2-2-deploy-scale-kubernetes-chat-app-ibm-bluemix/",
+    "deploy": "9"
+  },
+  {
+    "name": "1.2 Deploy scalable Docker application to IBM Cloud",
+    "description": "As of May 23rd, IBM Bluemix Container Service now provides a native Kubernetes operations experience while removing the burden of maintaining master nodes. Kubernetes itself is based on the Docker engine for managing software images and instantiating containers. Get the details. As a Bluemix Developer Advocate, I get to work with many developers worldwide who are interested in learning more about IBM Container services. I repeatedly get asked the same questions, so I thought it would be good to answer them with a guide for deploying a docker application to Bluemix and explain why developers should use it.",
+    "language": [
+      "Docker", 
+      "Node.js",
+      "Scaling"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2017/02/deploy-scalable-docker-application/",
+    "deploy": "7"
+  },
+  {
+    "name": "Use Virtual Servers to build highly available and scalable web app",
+    "description": "IBM Cloud infrastructure services offer a collection of infrastructure services like compute, storage, network, security, VMware and more. With this in place, let’s explore what it takes to build a highly available and scalable web application on IBM Cloud.",
+    "language": [
+      "Load Balancer", 
+      "Virtual Servers",
+      "File Storage"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2018/01/use-virtual-servers-build-highly-available-scalable-web-app/",
+    "deploy": "19"
+  },
+  {
+    "name": "Automate deployment of environments using Infrastructure as Code",
+    "description": "IBM Cloud Schematics is a tool that uses Terraform to provision and manages infrastructure resources, Cloud Foundry applications, services, Kubernetes clusters and much more using the code in a configuration file(s). To showcase these aspects, we added a new tutorial to our collection. In this tutorial, you will use a provided template in Schematics to provision a Linux virtual server, with Apache web server, MySQL, and PHP server (LAMP stack) and Object Storage. You will then configure the template to scale the resources and tune the environment (memory, CPU, and disk size). Finish by deleting all of the resources created by the configuration. You will learn all about Cloud Schematics (Infrastructure as Code).",
+    "language": [
+      "IBM Cloud Schematics", 
+      "IBM Cloud Infrastructure",
+      "Object Storage"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2017/12/automate-deployment-environments-using-infrastructure-code/",
+    "deploy": "15"
+  },
+  {
+    "name": "Featured code samples on new IBM Cloud GitHub repository",
+    "description": "There are hundreds of code samples all over the web for developing on IBM Cloud. This is great, but it can be difficult to find a good working code samples that are managed and maintained. With the new ibm-bluemix.github.io, we overcome this challenge by creating a central place where you can to find selected code samples for developing on IBM.",
+    "language": [
+      "GitHub", 
+      "Code Samples"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2016/11/new-ibm-bluemix-github-io-samples/",
+    "deploy": "4"
+  },
+  {
+    "name": "Form Processing With Cloud Functions",
+    "description": "The OpenWhiskContact application is a simple Angular.js form processing app that shows how a form can be processed without the need of any backend, this is by using the IBM OpenWhisk Serverless architecture where an action is created then exposed as an API and then used in the Angular app.",
+    "language": [
+      "Cloud Functions", 
+      "Angular"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2017/03/form-processing-ibm-bluemix-openwhisk/",
+    "deploy": "6"
+  },
+  {
+    "name": "Migrate an application from Azure to IBM Cloud",
+    "description": "IBM Cloud is an implementation of IBM’s Open Cloud Architecture, leveraging Cloud Foundry to enable developers to rapidly build, deploy, and manage applications and services. Although Microsoft Azure, another popular PaaS platform, shares quite a few similarities with Cloud Foundry, several elements still need to be addressed when porting Microsoft Azure applications to IBM Bluemix.",
+    "language": [
+      "Node.js", 
+      "Azure"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2016/02/migrate-app-from-azure-to-bluemix/",
+    "deploy": "7"
+  },
+  {
+    "name": "Deploying a CRUD PHP application to IBM Cloud",
+    "description": "PHP developers still spend a lot of time configuring systems and servers to get a PHP application up and running. PHP developers usually go through this lifecycle every time starting a project. Luckily, Bluemix services and runtimes take all this grunt work out of creating web applications.",
+    "language": [
+      "PHP", 
+      "MySQL"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2016/01/deploy-simple-database-php-app-to-bluemix/",
+    "deploy": "8"
+  }
+]

@@ -1,0 +1,299 @@
+<!-- Search -->
+<div class="header-panel shadow-z-2-filter">
+        <div class="page-container">
+            <div class="filter-row">
+    
+                <div class="fil">
+                    <form role="search">
+                        <div class="form-group search-input">
+                            <input type="text" class="form-control" placeholder="Search by solutions, service or runtime..." ng-model="searchTextData">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="page-container main outer solutions">
+        <div class="TotHome">
+            <span class="leftHeaderLabel">
+                <span class="headerPanelL">
+                    <img id="IBM-icon-solutions" width="32" height="32" src="icons/ibm-cloud-logo-white.svg"> Technical Solutions
+                </span>
+                <a href="./#!/solutions" class="allButton">
+                    All on solutions
+                    <img src="icons/goto.svg" alt="All on solutions">
+                </a>
+            </span>
+    
+            <span class="headerPanelR">
+                <span class="resources__count">
+                    <span ng-if="solutions.length === filteredLinks.length">Latest
+                        <span class="resources__count-current">{{solutions.length}}</span> solutions
+                    </span>
+                    <span ng-if="filteredLinks.length != solutions.length">Found
+                        <span class="resources__count-current">{{filteredLinks.length}}</span> solutions
+                    </span>
+                </span>
+                <span class="resources__actions">
+                    <button class="control-btn control-btn--right" ng-click="scrollToRight">
+                        <img src="icons/control-right.svg">
+                    </button>
+                    <button class="control-btn control-btn--left" ng-click="scrollToLeft">
+                        <img src="icons/control-left.svg">
+                    </button>
+                </span>
+            </span>
+    
+        </div>
+        <main class="content">
+            <div class="card__content">
+                <ul class="items-wrapper solutions">
+                    <!-- START FULL PAGE -->
+                    <div class="resources__wrapper" ng-scrollable="{events:'emit',id:1}">
+                        <li class="inside project-item slide-animation" ng-repeat="sample in ( filteredLinks = ( solutions | filter:searchTextData ))">
+                            <div class="project-outer solutions" ng-class="{{sample.count}}">
+                                <img id="IBM-icon-solutions-inside" width="200" height="75" src="https://ace-dashboard-production-red.cdn.eu-gb.s-bluemix.net/dashboard/cache/15c0-3444830508/images/svg/ibm-cloud-logo-lockup-color.svg">
+    
+                                <!-- tracking sample links -->
+                                <div class="link-title">
+                                    <a id="demoID" href="{{sample.urlLink}}" target="_blank">{{sample.name}}</a>
+                                </div>
+                                <div class="project-content description">
+                                    <span>{{sample.description}}</span>
+                                </div>
+    
+                                <div class="project-content tag-group">
+                                    <div class="tag-holder">
+                                        <span ng-repeat="item in sample.language">
+                                            <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <meta name="description" content="{{sample.search}}">
+                            <div class="tag-level solutions">
+                                <span class="project-link">{{sample.deploy}} mins deploy</span>
+    
+                                <span ng-show="{{sample.urlLink !== ''}}" class="project-link demo">
+                                    <a id="LiveDemo" href="{{sample.urlLink}}" class="hrefLink" target="_blank">View Solution</a>
+                                </span>
+    
+                            </div>
+    
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </main>
+    </div>
+    
+    <br><br>
+    <div class="page-container main outer solutions">
+            <div class="TotHome">
+                <span class="leftHeaderLabel">
+                    <span class="headerPanelL">
+                        <img id="IBM-icon-solutions" width="32" height="32" src="icons/ibm-cloud-logo-white.svg"> Blog Posts
+                    </span>
+                    <a href="./#!/solutions" class="allButton">
+                        All my blogs
+                        <img src="icons/goto.svg" alt="All on solutions">
+                    </a>
+                </span>
+        
+                <span class="headerPanelR">
+                    <span class="resources__count">
+                        <span ng-if="blogs.length === filteredLinks.length">Latest
+                            <span class="resources__count-current">{{blogs.length}}</span> solutions
+                        </span>
+                        <span ng-if="filteredLinks.length != blogs.length">Found
+                            <span class="resources__count-current">{{filteredLinks.length}}</span> solutions
+                        </span>
+                    </span>
+                    <span class="resources__actions">
+                        <button class="control-btn control-btn--right" ng-click="scrollToRight">
+                            <img src="icons/control-right.svg">
+                        </button>
+                        <button class="control-btn control-btn--left" ng-click="scrollToLeft">
+                            <img src="icons/control-left.svg">
+                        </button>
+                    </span>
+                </span>
+        
+            </div>
+            <main class="content">
+                <div class="card__content">
+                    <ul class="items-wrapper solutions">
+                        <!-- START FULL PAGE -->
+                        <div class="resources__wrapper" ng-scrollable="{events:'emit',id:1}">
+                            <li class="inside project-item slide-animation" ng-repeat="blog in ( filteredLinks = ( blogs | filter:searchTextData))">
+                                <div class="project-outer solutions" ng-class="{{sample.count}}">
+                                    <img id="IBM-icon-solutions-inside" width="200" height="75" src="https://ace-dashboard-production-red.cdn.eu-gb.s-bluemix.net/dashboard/cache/15c0-3444830508/images/svg/ibm-cloud-logo-lockup-color.svg">
+        
+                                    <!-- tracking blog links -->
+                                    <div class="link-title">
+                                        <a id="demoID" href="{{blog.urlLink}}" target="_blank">{{blog.name}}</a>
+                                    </div>
+                                    <div class="project-content description">
+                                        <span>{{blog.description}}</span>
+                                    </div>
+        
+                                    <div class="project-content tag-group">
+                                        <div class="tag-holder">
+                                            <span ng-repeat="item in blog.language">
+                                                <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <meta name="description" content="{{blog.search}}">
+                                <div class="tag-level solutions">
+                                    <span class="project-link">{{blog.deploy}} mins deploy</span>
+        
+                                    <span ng-show="{{blog.urlLink !== ''}}" class="project-link demo">
+                                        <a id="LiveDemo" href="{{blog.urlLink}}" class="hrefLink" target="_blank">View Solution</a>
+                                    </span>
+        
+                                </div>
+        
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    
+    
+    
+    
+    
+    
+     <div class="page-container main outer">
+        <div class="TotHome">
+            <span class="headerPanelL">
+                <img id="IBM-icon-solutions" width="32" height="32" src="icons/ibm-cloud-logo-white.svg"> Technical Solutions</span>
+            <span class="headerPanelR">
+                <span ng-if="solutions.length === filteredLinks.length">Solutions Found
+                    <b>{{solutions.length}}</b>
+                </span>
+                <span ng-if="filteredLinks.length != solutions.length">Found
+                    <b>{{filteredLinks.length}}</b> solutions</span>
+            </span>
+        </div>
+    
+        <ul class="items-wrapper">
+            <!-- START FULL PAGE -->
+            <li class="inside project-item slide-animation" ng-repeat="sample in ( filteredLinks = ( solutions | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP ))">
+    
+                <div class="project-outer" ng-class="{demo: sample.tags.indexOf('demo')>=0}">
+                    <!-- tracking sample links -->
+                    <div class="link-title">
+                        <a id="demoID" data-track-action="sample-title" data-track-label="{{sample.urlLink}}" href="{{sample.url}}" target="_blank"
+                            analytics-on="click" analytics-name="Visited Repo Content" analytics-referrer="Visited Repo Content"
+                            analytics-event="Sample Title: {{sample.name}}">{{sample.name}}</a>
+                        <a href="{{sample.homepage}}" ng-if="sample.homepage">
+                            <span class="e1a-sample e1a-sm"></span>
+                        </a>
+                    </div>
+                    <div class="project-content description">
+                        <span>{{sample.description}}</span>
+                    </div>
+    
+                    <div class="project-content tag-group">
+    
+                        <div class="tag-holder">
+                            <span class="FirSpanLeft">LANGUAGES: </span>
+                            <span ng-repeat="item in sample.language">
+                                <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
+    
+    
+                            </span>
+                        </div>
+    
+                        <span class="FirSpanLeft">CATEGORY: </span>
+                        <div class="tag-holder">
+                            <span ng-repeat="item in sample.category">
+                                <span class="tag-filter category" ng-class="CatChecked">{{item}}</span>
+                            </span>
+                        </div>
+    
+                        <span class="FirSpanLeft">SERVICES: </span>
+                        <div class="tag-services">
+                            <span ng-repeat="item in sample.services">
+                                <span class="services ">{{item || '&nbsp;'}}{{$last ? '' : ','}}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <meta name="description" content="{{sample.search}}">
+    
+    
+                <div class="tag-level">
+    
+    
+                    <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
+                        <a id="BlogPost" data-track-action="sample-blog" data-track-label="{{sample.blogPost}}" href="{{sample.blogPost}}" class="hrefLink"
+                            target="_blank" analytics-on="click" analytics-name="Viewed Blog Post" analytics-referrer="Viewed Blog Post"
+                            analytics-event="Blog Post: {{sample.name}}">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>blog</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs></defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="blog" fill-rule="nonzero" fill="#4178BE">
+                                        <g id="blog_24" transform="translate(2.000000, 2.000000)">
+                                            <g id="Layer_1">
+                                                <g id="Group">
+                                                    <g id="Shape">
+                                                        <polygon points="14.5454545 7.27272727 12.7272727 7.27272727 13.6363636 4.54545455 11.8181818 4.54545455 10.9090909 7.27272727 10.9090909 10.9090909 14.5454545 10.9090909"></polygon>
+                                                        <polygon points="9.09090909 7.27272727 7.27272727 7.27272727 8.18181818 4.54545455 6.36363636 4.54545455 5.45454545 7.27272727 5.45454545 10.9090909 9.09090909 10.9090909"></polygon>
+                                                        <path d="M0,0 L0,15.3845455 L4.61545455,20 L20,20 L20,0 L0,0 Z M18.1818182,18.1818182 L5.45454545,18.1818182 L5.45454545,14.5454545 L1.81818182,14.5454545 L1.81818182,1.81818182 L18.1818182,1.81818182 L18.1818182,18.1818182 Z"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </span>
+    
+                    <span ng-show="{{sample.urlVideo !== ''}}" class="project-link">
+                        <a id="LiveVideo" data-track-action="sample-video" data-track-label="{{sample.urlVideo}}" href="{{sample.urlVideo}}" class="hrefLink"
+                            target="_blank" analytics-on="click" analytics-name="Viewed Video" analytics-referrer="Viewed Video"
+                            analytics-event="View Video: {{sample.name}}">
+                            <svg width="27px" height="26px" viewBox="0 0 27 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+                                <title>video</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs></defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="video" fill-rule="nonzero" fill="#4178BE">
+                                        <g id="video_32" transform="translate(1.000000, 1.000000)">
+                                            <g id="Layer_1">
+                                                <g id="Group">
+                                                    <polygon id="Shape" points="9.16666667 7.5 9.16666667 15.8333333 17.5 11.6666667"></polygon>
+                                                    <path d="M0,0 L0,3.33333333 L0,20 L25,20 L25,3.33333333 L25,0 L0,0 Z M23.3333333,18.3333333 L1.66666667,18.3333333 L1.66666667,5 L23.3333333,5 L23.3333333,18.3333333 Z"
+                                                        id="Shape"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </span>
+    
+                    <span ng-show="{{sample.urlLink !== ''}}" class="project-link demo">
+                        <a id="LiveDemo" data-track-action="sample-demo" data-track-label="{{sample.urlLink}}" href="{{sample.urlLink}}" class="hrefLink"
+                            target="_blank" analytics-on="click" analytics-name="Viewed Live Demo" analytics-referrer="Viewed Live Demo"
+                            analytics-event="Live Demo: {{sample.name}}">Demo</a>
+                    </span>
+    
+                </div>
+    
+            </li>
+        </ul>
+    
+    </div> 

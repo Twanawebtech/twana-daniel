@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Modern Web Application using MEAN stack on IBM Cloud",
+    "description": "This is a basic boilerplate for the MEAN stack (MongoDB, Express, AngularJS and Node.js) on IBM Cloud. This application uses the Compose for MongoDB service and Node.js runtime on IBM Cloud.",
+    "language": [
+      "NodeJS", 
+      "Cloud Foundry", 
+      "Compose for MongoDB"
+    ],
+    "urlLink": "https://github.com/IBM-Cloud/nodejs-MEAN-stack",
+    "deploy": "7",
+    "image": "angular.svg"
+  }, 
+  {
+    "name": "Todo Apps for web and mobile",
+    "description": "The ToDo sample apps are meant to be simple demos of how you can take advantage of IBM Cloud and a database service. The ToDo sample is written in number of languages so select the language you wish.    ",
+    "language": [
+      "Node.js", 
+      "PHP", 
+      "Java", 
+      "Python",
+      "Swift",
+      "Rails",
+      "Sinatra"
+    ],
+    "urlLink": "https://github.com/IBM-Cloud/todo-apps",
+    "deploy": "15",
+    "image": "todo.png"
+  }, 
+  {
+    "name": "Forms processing with IBM Cloud Functions",
+    "description": "The OpenWhiskContact application is a simple Angular.js form processing app that shows how a form can be processed without the need of any backend, this is by using the IBM OpenWhisk Serverless architecture where an action is created then exposed as an API and then used in the Angular app.",
+    "language": [
+      "Cloud Functions", 
+      "JavaScript", 
+      "Angular.js"
+    ],
+    "urlLink": "https://github.com/IBM-Cloud/openwhisk-contact",
+    "deploy": "12",
+    "image": "functions.png"
+  }, 
+  {
+    "name": "Deploy and Scale Docker and Kubernetes chat app",
+    "description": "The BlueChatter app is a simple chat/IRC type application for your browser which allows multiple users to chat when online at the same time. The sample app is used to showcase how to deploy and scale a chat application using Cloud Foundry and Docker container service and Kubernetes approach. The demo demonstrates how quickly you can deploy and scale your application where been it's a Cloud Foundry, Docker Container Service or Kubernetes Cluster.    ",
+    "language": [
+      "Node.js", 
+      "Kubernetes", 
+      "Docker"
+    ],
+    "urlLink": "https://github.com/IBM-Cloud/bluechatter",
+    "deploy": "22",
+    "image": "kubernetes.png"
+  }, 
+  {
+    "name": "Amazon Alexa Skills using OpenWhisk and Watson",
+    "description": "Create Amazon Alexa skill that uses IBM Bluemix OpenWhisk to host the backend actions and IBM Watson Tone Analyzer analyse an array of objects. With this in place, the user can play quotes that are happy, sad, fear ect.",
+    "language": [
+      "Amazon Developer", 
+      "JavaScript", 
+      "IBM Watson"
+    ],
+    "urlLink": "https://github.com/Twanawebtech/alexa-and-watson",
+    "deploy": "12",
+    "image": "alexa.png"
+  }, 
+  {
+    "name": "Investment Insights for Asset Managers",
+    "description": "Investment Insights for Asset Managers is a modern finance portfolio manager that provides real-time insight into how news all around the world can impact the investment to any given portfolio.",
+    "language": [
+      "Watson Discovery News", 
+      "Investment Portfolio", 
+      "Simulated Instrument Analytics",
+      "Node.js"
+    ],
+    "urlLink": "https://github.com/IBM-Cloud/investment-insights-for-asset-managers",
+    "deploy": "30",
+    "image": "angular.svg"
+  }, 
+  {
+    "name": "Twana Daniel personal site",
+    "description": "My personal website built using Node.js and Agnular. My personal website built with Angular.js to server the frontend and Node.js to server the backend handling the contact form and fetching the blog data from a database.",
+    "language": [
+      "Node.js", 
+      "Angular.js"
+    ],
+    "urlLink": "https://github.com/Twanawebtech/twana-daniel",
+    "deploy": "10",
+    "image": "me.png"
+  }, 
+  {
+    "name": "Deploy to IBM Cloud simple CRUD application using PHP and codeigniter",
+    "description": "PHP developers still spend a lot of time configuring systems and servers to get a PHP application up and running. PHP developers usually go through this lifecycle every time starting a project. Luckily, there are services out there that take all this grunt work out of creating web applications, such as IBM Bluemix.    ",
+    "language": [
+      "PHP", 
+      "Codeigniter",
+      "MySQL"
+    ],
+    "urlLink": "https://github.com/Twanawebtech/CRUD-PHP-Codeigniter-Bluemix",
+    "deploy": "12",
+    "image": "php.png"
+  }
+]

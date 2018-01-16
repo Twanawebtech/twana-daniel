@@ -1,0 +1,234 @@
+<!-- Search -->
+<div class="header-panel shadow-z-2-filter">
+    <div class="page-container">
+        <div class="filter-row">
+
+            <div class="fil">
+                <form role="search">
+                    <div class="form-group search-input">
+                        <input type="text" class="form-control" placeholder="Search by solutions, service or runtime..." ng-model="searchTextData">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Solutions -->
+<div class="page-container main outer solutions">
+    <div class="TotHome">
+        <span class="leftHeaderLabel">
+            <span class="headerPanelL">
+                <img id="IBM-icon-solutions" width="32" height="32" src="icons/ibm-cloud-logo-white.svg"> Solutions
+            </span>
+            <a href="./#!/solutions" class="allButton">
+                All on solutions
+                <img src="icons/goto.svg" alt="All on solutions">
+            </a>
+        </span>
+
+        <span class="headerPanelR">
+            <span class="resources__count">
+                <span ng-if="solutions.length == solutions.length">Latest
+                    <span class="resources__count-current">{{solutions.length}}</span> solutions
+                </span>
+            </span>
+            <span class="resources__actions">
+                <button class="control-btn control-btn--right" ng-click="scrollToRight">
+                    <img src="icons/control-right.svg">
+                </button>
+                <button class="control-btn control-btn--left" ng-click="scrollToLeft">
+                    <img src="icons/control-left.svg">
+                </button>
+            </span>
+        </span>
+
+    </div>
+    <main class="content">
+        <div class="card__content">
+            <ul class="items-wrapper solutions">
+                <!-- START FULL PAGE -->
+                <div class="resources__wrapper" ng-scrollable="{events:'emit',id:1}">
+                    <li class="inside project-item slide-animation" ng-repeat="sample in solutions | filter:searchTextData">
+                        <div class="project-outer solutions" ng-class="{{sample.count}}">
+                            <img id="IBM-icon-solutions-inside" width="200" height="75" src="https://ace-dashboard-production-red.cdn.eu-gb.s-bluemix.net/dashboard/cache/15c0-3444830508/images/svg/ibm-cloud-logo-lockup-color.svg">
+
+                            <!-- tracking sample links -->
+                            <div class="link-title">
+                                <a id="demoID" href="{{sample.urlLink}}" target="_blank">{{sample.name}}</a>
+                            </div>
+                            <div class="project-content description">
+                                <span>{{sample.description}}</span>
+                            </div>
+
+                            <div class="project-content tag-group">
+                                <div class="tag-holder">
+                                    <span ng-repeat="item in sample.language">
+                                        <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <meta name="description" content="{{sample.search}}">
+                        <div class="tag-level solutions">
+                            <span class="project-link">{{sample.deploy}} mins deploy</span>
+
+                            <span ng-show="{{sample.urlLink !== ''}}" class="project-link demo">
+                                <a id="LiveDemo" href="{{sample.urlLink}}" class="hrefLink" target="_blank">View Solution</a>
+                            </span>
+
+                        </div>
+
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </main>
+</div>
+
+<br>
+<br>
+<!-- Blogs -->
+<div class="page-container main outer solutions">
+    <div class="TotHome">
+        <span class="leftHeaderLabel">
+            <span class="headerPanelL">
+                <img id="IBM-icon-solutions" width="32" height="32" src="icons/blog.svg"> Blog posts
+            </span>
+            <a href="./#!/blogs" class="allButton">
+                All my blog posts
+                <img src="icons/goto.svg" alt="All on blogs">
+            </a>
+        </span>
+
+        <span class="headerPanelR">
+            <span class="resources__count">
+                <span>Latest
+                    <span class="resources__count-current">{{blogs.length}}</span> blogs
+                </span>
+            </span>
+            <span class="resources__actions">
+                <button class="control-btn control-btn--right" ng-click="scrollToRight">
+                    <img src="icons/control-right.svg">
+                </button>
+                <button class="control-btn control-btn--left" ng-click="scrollToLeft">
+                    <img src="icons/control-left.svg">
+                </button>
+            </span>
+        </span>
+
+    </div>
+    <main class="content">
+        <div class="card__content">
+            <ul class="items-wrapper solutions">
+                <!-- START FULL PAGE -->
+                <div class="resources__wrapper">
+                    <li class="inside project-item slide-animation" ng-repeat="blog in blogs | filter:searchTextData">
+                        <div class="project-outer solutions" ng-class="{{sample.count}}">
+
+                            <!-- tracking blog links -->
+                            <div class="link-title">
+                                <a id="demoID" href="{{blog.urlLink}}" target="_blank">{{blog.name}}</a>
+                            </div>
+                            <div class="project-content description">
+                                <span>{{blog.description}}</span>
+                            </div>
+
+                            <div class="project-content tag-group">
+                                <div class="tag-holder">
+                                    <span ng-repeat="item in blog.language">
+                                        <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <meta name="description" content="{{blog.search}}">
+                        <div class="tag-level solutions">
+                            <span class="project-link">{{blog.deploy}} mins read</span>
+
+                            <span ng-show="{{blog.urlLink !== ''}}" class="project-link demo">
+                                <a id="LiveDemo" href="{{blog.urlLink}}" class="hrefLink" target="_blank">Read More...</a>
+                            </span>
+
+                        </div>
+
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </main>
+</div>
+
+<br>
+<br>
+<!-- Code Samples -->
+<div class="page-container main outer solutions">
+        <div class="TotHome">
+            <span class="leftHeaderLabel">
+                <span class="headerPanelL">
+                    <img id="IBM-icon-solutions" width="32" height="32" src="icons/code-flat.png"> Code Samples
+                </span>
+                <a href="./#!/samples" class="allButton">
+                    All samples
+                    <img src="icons/goto.svg" alt="All on blogs">
+                </a>
+            </span>
+    
+            <span class="headerPanelR">
+                <span class="resources__count">
+                    <span>Latest
+                        <span class="resources__count-current">{{samples.length}}</span> samples
+                    </span>
+                </span>
+                <span class="resources__actions">
+                    <button class="control-btn control-btn--right" ng-click="scrollToRight">
+                        <img src="icons/control-right.svg">
+                    </button>
+                    <button class="control-btn control-btn--left" ng-click="scrollToLeft">
+                        <img src="icons/control-left.svg">
+                    </button>
+                </span>
+            </span>
+    
+        </div>
+        <main class="content">
+            <div class="card__content">
+                <ul class="items-wrapper solutions">
+                    <!-- START FULL PAGE -->
+                    <div class="resources__wrapper">
+                        <li class="inside project-item slide-animation" ng-repeat="sample in samples | filter:searchTextData">
+                            <div class="project-outer solutions" ng-class="{{sample.count}}">
+                                <img id="code-icon-solutions-inside" width="30" height="30" src="icons/{{sample.image}}">
+    
+                                <!-- tracking sample links -->
+                                <div class="link-title">
+                                    <a id="demoID" href="{{sample.urlLink}}" target="_blank">{{sample.name}}</a>
+                                </div>
+                                <div class="project-content description">
+                                    <span>{{sample.description}}</span>
+                                </div>
+    
+                                <div class="project-content tag-group">
+                                    <div class="tag-holder">
+                                        <span ng-repeat="item in sample.language">
+                                            <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <meta name="description" content="{{sample.search}}">
+                            <div class="tag-level solutions">
+                                <span class="project-link">{{sample.deploy}} mins build</span>
+    
+                                <span ng-show="{{sample.urlLink !== ''}}" class="project-link demo">
+                                    <a id="LiveDemo" href="{{sample.urlLink}}" class="hrefLink" target="_blank">Vide Code</a>
+                                </span>
+    
+                            </div>
+    
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </main>
+    </div>

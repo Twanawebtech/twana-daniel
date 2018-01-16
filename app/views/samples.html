@@ -1,26 +1,28 @@
 <div class="page-container main outer">
     <div class="mainDisplayDisplay">
         <span class="mainHeaderPanelL">
-            <img id="IBM-icon-solutions" width="32" height="32" src="icons/blog.svg">Blogs
+            <img id="IBM-icon-solutions" width="32" height="32" src="icons/code-flat.png">Code Samples
         </span>
-        <p>Find blog articles on cloud services, programming languages and compute options</p>
+        <p>Find code comples covering cloud services, React.js, Angular.js, Node.js and more</p>
     </div>
 
     <div class="post-card__container post-card__container--back">
-            <a href="./#!/" class="post-card__meta post-card__meta-link">
-                <div class="post__card__tag">
-                    <img src="icons/goto.svg" alt="back to home">
-                </div>Back to home
-            </a>
-        </div>
-    
+        <a href="./#!/" class="post-card__meta post-card__meta-link">
+            <div class="post__card__tag">
+                <img src="icons/goto.svg" alt="back to home">
+            </div>Back to home
+        </a>
+    </div>
+
     <main class="content">
         <div class="card__content">
             <ul class="items-wrapper" >
                 <!-- START FULL PAGE -->
                 <div class="resources__wrapper_main" >
-                    <li class="inside project-item slide-animation" ng-repeat="sample in blogs | filter:searchTextData">
+                    <li class="inside project-item slide-animation" ng-repeat="sample in samples | filter:searchTextData">
                         <div class="project-outer solutions" ng-class="{{sample.count}}">
+                            <img id="code-icon-solutions-inside" width="28" height="30" src="icons/{{sample.image}}">
+
                             <!-- tracking sample links -->
                             <div class="link-title">
                                 <a id="demoID" href="{{sample.urlLink}}" target="_blank">{{sample.name}}</a>
@@ -42,7 +44,7 @@
                             <span class="project-link">{{sample.deploy}} mins read</span>
 
                             <span ng-show="{{sample.urlLink !== ''}}" class="project-link demo">
-                                <a id="LiveDemo" href="{{sample.urlLink}}" class="hrefLink" target="_blank">View Solution</a>
+                                <a id="LiveDemo" href="{{sample.urlLink}}" class="hrefLink" target="_blank">View Code</a>
                             </span>
                         </div>
                     </li>
