@@ -93,15 +93,16 @@ svg {
     padding: 6px 12px;
     font-size: 14px;
     transition: color 0.2s ease;
-    color: rgb(249, 135, 39);
+    color: rgba(255,255,255,0.8);
+
 }
 .nav__link:hover
 {
-  color: white;
+  color: rgb(249, 135, 39);
   text-decoration: none;
 }
 .nav__link:active{
-  color: white;
+  color: rgb(249, 135, 39);
   text-decoration: none;
 }
 .row-details span{
@@ -135,11 +136,12 @@ p.info a {
   text-align: right;
 }
 .social-icons a{
-  color: #f98823;
+  color: rgba(255,255,255,0.8);
   text-decoration: none;
 }
 .social-icons a:hover{
-  color: rgba(255,255,255,0.8);
+  color: #f98823;
+
 }
 
 i.fa.fa-twitter-square, i.fa.fa-facebook-official, i.fa.fa-linkedin-square, i.fa.fa-github-square{
@@ -1001,6 +1003,20 @@ input, textarea, button, a {
   }
   .about__content {
     display: block;
+  }
+  footer{
+    border-top: 1px solid #313546;
+    width: auto;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 3em;
+    padding-top: 10px;
+    font-size: 13px;
+    bottom: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    margin: 3rem 1rem;
   }
 }
 
