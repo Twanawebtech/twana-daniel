@@ -328,7 +328,7 @@ h2.blog-title-pro:after {
 
 footer {
   border-top: 1px solid #313546;
-  width: 100%;
+  width: auto;
   height: 10px;
   margin-top: 10px;
   margin-bottom: 3em;
