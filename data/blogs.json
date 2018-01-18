@@ -1,5 +1,15 @@
 [
   {
+    "name": "How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 16.04",
+    "description": "A LAMP stack is a group of open source software that is typically installed together to enable a server to host dynamic websites and web apps. This term is actually an acronym which represents the Linux operating system, with the Apache web server. The site data is stored in a MySQL database, and dynamic content is processed by PHP.",
+    "language": [
+      "LAMP", 
+      "Ubuntu 16.04"
+    ],
+    "urlLink": "https://www.ibm.com/blogs/bluemix/2018/01/install-linux-apache-mysql-php-lamp-stack-ubuntu-16-04/",
+    "deploy": "5"
+  },
+  {
     "name": "Securing single page apps with App ID service",
     "description": "The Investment Insights for Asset Managers offers a dashboard type user interface to allow users to analyze a set of stock portfolios based on the risk factor calculated. The application uses a combination of services like Watson Discovery News, Investment Portfolio, Predictive Market Scenarios and Simulated Instrument Analytics. All of the services configured using Node.js for the backend and AngularJS for the front end.",
     "language": [
