@@ -827,6 +827,17 @@ ul.items-wrapper.solutions li {
   position: relative;
 }
 
+li.inside.project-item.slide-animation.cast{
+  height: 530px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease;
+  margin-right: 5px;
+  flex: 0 0 30%;
+  position: relative;
+}
+
+
 ul.items-wrapper.solutions {
   display: flex;
   position: relative;
