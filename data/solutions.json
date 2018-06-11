@@ -1,5 +1,31 @@
 [
   {
+    "name": "Modernize and extend apps on IBM Cloud Kubernetes Service",
+    "description": "This demo modernizes an existing Java web application (JPetStore) by building a Docker container from the legacy stack. Then moving the app to IBM Cloud Kubernetes Service and extending it with Watson Visual Recognition and Twilio text messaging.",
+    "language": [
+      "Watson Visual Recognition", 
+      "Twilio", 
+      "Kubernetes",
+      "Java"
+    ],
+    "urlLink": "https://console.bluemix.net/docs/tutorials/vm-to-containers-and-kubernetes.html",
+    "deploy": "30",
+    "count": "item1"
+  },
+  {
+    "name": "Use Virtual Servers to build highly available and scalable web app",
+    "description": "This tutorial walks you through the creation of a load balancer, two application servers running on Ubuntu with NGINX and PHP installed, one MySQL database server, and durable file storage to store application files and backups.",
+    "language": [
+      "Virtual Servers", 
+      "Load Balancer", 
+      "PHP",
+      "Object Storage"
+    ],
+    "urlLink": "https://console.bluemix.net/docs/tutorials/highly-available-and-scalable-web-application.html#use-virtual-servers-to-build-highly-available-and-scalable-web-app",
+    "deploy": "25",
+    "count": "item2"
+  },
+  {
     "name": "Use Virtual Servers to build highly available and scalable web app",
     "description": "This tutorial walks you through the creation of a load balancer, two application servers running on Ubuntu with NGINX and PHP installed, one MySQL database server, and durable file storage to store application files and backups.",
     "language": [
