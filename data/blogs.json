@@ -1,6 +1,18 @@
 [
   {
-    "name": "Move a VM based application to Kubernetes",
+    "name": "Transforming Customer Experiences with AI Services (Part 1)",
+    "description": "Dev Centre House (DCH) An experience from a recent customer engagement on transcribing customer conversations",
+    "language": [
+      "Speech To Text", 
+      "Natural Language Understanding", 
+      "Knowledge Studio",
+      "Tone Analyzer"
+    ],
+    "urlLink": "https://www.ibm.com/cloud/blog/transforming-customer-experiences-with-ai-services-part-1",
+    "deploy": "12"
+  },
+  {
+    "name": "Move a VM based application to Kubernetes. Dev Centre House (DCH)",
     "description": "This demo modernizes an existing Java web application (JPetStore) by building a Docker container from the legacy stack. Then moving the app to IBM Cloud Kubernetes Service and extending it with Watson Visual Recognition and Twilio text messaging.",
     "language": [
       "Watson Visual Recognition", 
